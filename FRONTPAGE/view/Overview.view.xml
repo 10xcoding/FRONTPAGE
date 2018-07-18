@@ -1,0 +1,59 @@
+<mvc:View
+		controllerName="FRONTPAGE.controller.App"
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>homePageTitle}" class="frontPage">
+		
+		<headerContent>
+			<Button icon="image/logo.png" type="Transparent" press="onLogoPress">
+                <layoutData>
+                    <OverflowToolbarLayoutData priority="NeverOverflow" />
+                </layoutData>
+            </Button>
+            
+            <Button icon="sap-icon://search" type="Transparent">
+                <layoutData>
+                    <OverflowToolbarLayoutData priority="NeverOverflow" />
+                </layoutData>
+            </Button>
+            
+            <Button icon="sap-icon://comment" type="Transparent">
+                <layoutData>
+                    <OverflowToolbarLayoutData priority="NeverOverflow" />
+                </layoutData>
+            </Button>
+    
+            <MenuButton icon="sap-icon://hint" type="Transparent">
+                <layoutData>
+                    <OverflowToolbarLayoutData priority="NeverOverflow" />
+                </layoutData>
+                <menu>
+                    <Menu>
+                        <items>
+                            <MenuItem text="Edit" icon="sap-icon://edit" />
+                            <MenuItem text="Save" icon="sap-icon://save" />
+                        </items>
+                    </Menu>
+                </menu>
+            </MenuButton>
+		</headerContent>
+		
+		<Image class="frontPageImage"
+		    src="image/TitleBackGround.png">
+        </Image>
+		
+		<content>
+			<mvc:XMLView viewName="FRONTPAGE.view.Block"/>
+		</content>
+		
+		<footer>
+			<Toolbar>
+				<Link
+                    class="footerLink"
+            		text="10xCoding"
+            		target="_blank"
+            		href="https://www.10xcoding.com/" />
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

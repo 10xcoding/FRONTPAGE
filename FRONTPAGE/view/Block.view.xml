@@ -1,0 +1,82 @@
+<mvc:View
+    controllerName="FRONTPAGE.controller.Block"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m"
+	xmlns:tnt="sap.tnt"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:custom="sap.ui.documentation.sdk.controls"
+	height="100%">
+
+	<l:BlockLayout>
+
+        <l:BlockLayoutRow>
+    		<l:BlockLayoutCell
+    		    backgroundColorSet="ColorSet5"
+				backgroundColorShade="ShadeA">
+				<l:VerticalLayout>
+    				<Link
+                        class="appTitleLink"
+                		href=""
+    					text="Application 1"/>	
+        			<Text 
+        			    class="appDes"
+        			    textAlign="Left" 
+        			    width="100%"
+    					text="Application 1 Description"/>
+    			</l:VerticalLayout>
+		    </l:BlockLayoutCell>
+    		<l:BlockLayoutCell
+    		    backgroundColorSet="ColorSet9"
+				backgroundColorShade="ShadeA">
+				<l:VerticalLayout>
+					<Link
+                        class="appTitleLink"
+                		href="https://10xcoding.club/tcodesearch/"
+						text="T-Code Search"/>		
+        			<Text 
+        			    class="appDes"
+        			    textAlign="Left" 
+        			    width="100%"
+        				text="T-Code Search Application Description"/>
+				</l:VerticalLayout>
+    		</l:BlockLayoutCell>
+    		
+    	</l:BlockLayoutRow>
+    	
+    	<l:BlockLayoutRow>		
+			<l:BlockLayoutCell
+    		    backgroundColorSet="ColorSet11"
+				backgroundColorShade="ShadeB">
+				<l:VerticalLayout>
+					<Link
+                        class="appTitleLink"
+                		href="https://10xcoding.club/signup/"
+						text="Sign Up"/>
+        			<Text 
+        			    class="appDes"
+        			    textAlign="Left" 
+        			    width="100%"
+        				text="Sign Up Application Description"/>
+				</l:VerticalLayout>
+    		</l:BlockLayoutCell>
+    		<l:BlockLayoutCell
+    		    backgroundColorSet="ColorSet6"
+					backgroundColorShade="ShadeA">
+				<l:VerticalLayout>
+    				<Link
+                        class="appTitleLink"
+                		href=""
+    					text="Application 4"/>	
+        			<Text 
+        			    class="appDes"
+        			    textAlign="Left" 
+        			    width="100%"
+    					text="Application 4 Description"/>
+    			</l:VerticalLayout>
+		    </l:BlockLayoutCell>    
+    	</l:BlockLayoutRow>
+    	
+    </l:BlockLayout>
+    
+</mvc:View>
